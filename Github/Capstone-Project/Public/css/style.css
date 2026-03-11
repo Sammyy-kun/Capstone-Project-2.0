@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #10b981;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* =============================================
+   Global SweetAlert2 Button Overrides
+   Replaces default purple with FixMart Green
+   ============================================= */
+.swal2-confirm {
+    background-color: #10b981 !important;
+    border-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+.swal2-confirm:hover {
+    background-color: #059669 !important;
+    border-color: #059669 !important;
+}
+
+.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Deny button (secondary action) - subtle green outline */
+.swal2-deny {
+    background-color: #ffffff !important;
+    border: 2px solid #10b981 !important;
+    color: #10b981 !important;
+}
+
+.swal2-deny:hover {
+    background-color: #ecfdf5 !important;
+}
+
+/* Cancel button stays neutral */
+.swal2-cancel {
+    background-color: #e5e7eb !important;
+    color: #374151 !important;
+}
+
+.swal2-cancel:hover {
+    background-color: #d1d5db !important;
+}
