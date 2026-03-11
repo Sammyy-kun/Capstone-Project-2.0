@@ -1,7 +1,6 @@
 <?php
-require_once __DIR__ . '/Config/constants.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$loginUrl = (defined('BASE_URL') ? BASE_URL : '/') . 'View/User/Home/index.php';
-
-header('Location: ' . $loginUrl);
+header("Location: /Github/Capstone-Project/View//User/Home/index.php");
 exit;
